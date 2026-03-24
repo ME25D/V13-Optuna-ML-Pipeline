@@ -178,7 +178,6 @@ OOF WF1      : 0.84849
 zindi-financial-health-challenge/
 │
 ├── README.md
-├── .gitignore
 │
 ├── src/
 │   ├── train_pipeline_v13.py                    # Main pipeline (V13)
@@ -189,11 +188,7 @@ zindi-financial-health-challenge/
 │   ├── evidence_pack_v12_1.json                 # V12.1 reference evidence
 │   └── fold_indices_v12.json                    # Frozen fold split
 │
-├── notebooks/
-│   └── exploration.ipynb                        # EDA
-│
-└── docs/
-    └── approach.md                              # Extended technical writeup
+
 ```
 
 > **Note:** Raw data files (`Train.csv`, `Test.csv`) not included per Zindi's data policy.  
