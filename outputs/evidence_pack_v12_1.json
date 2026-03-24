@@ -1,0 +1,47 @@
+{
+  "version": "v12_1",
+  "patches_applied": [
+    "P0-A: recall fix",
+    "P0-B: dynamic threshold",
+    "P0-C: CB params",
+    "P0-D: calibration check",
+    "P1-A: submission independent"
+  ],
+  "baseline_wf1": 0.85997,
+  "alpha_accept_wf1": 0.85897,
+  "cb_calibration": {
+    "ece": 0.0958,
+    "bias": "inflated",
+    "bias_raw": 0.1511,
+    "threshold_suggestion": 0.5,
+    "n_bins": 10
+  },
+  "optuna_weights": {
+    "cb": 0.1845275215721769,
+    "lgbm": 0.5571575451659109,
+    "xgb": 0.2583149332619121
+  },
+  "optuna_info": {
+    "w_cb": 0.1845275215721769,
+    "w_lgbm": 0.5571575451659109,
+    "w_xgb": 0.2583149332619121,
+    "weighted_f1": 0.8599742574781436,
+    "high_recall": 0.6808510638297872,
+    "pred_high_count": 441,
+    "total_trials": 300
+  },
+  "medium_baseline": {
+    "MediumF1_base": 0.7664585191793042,
+    "MediumRec_base": 0.7489539748953975,
+    "MediumPre_base": 0.7848008768724881,
+    "pred_high_baseline": 441
+  },
+  "recoverable_high": {
+    "n_missed": 150,
+    "recoverable": 64,
+    "rota": "ALPHA_SWEEP_ONCE"
+  },
+  "best_alpha": 1.0,
+  "best_gate_threshold": null,
+  "fold_index_path": "outputs\\fold_indices_v12.json"
+}
